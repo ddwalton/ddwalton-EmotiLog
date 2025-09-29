@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style
+        name="emoji_button"
+        parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">80sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <syle
+        name="emoji_button_row">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">top</item>
+    </syle>
+    <style
+        name="switch_page_button"
+        parent="@style/Widget.Material3.Button.IconButton.Filled">
+        <item name="android:textSize">30sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="textOutlineColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">20dp</item>
+        <item name="backgroundTint">@color/android_green</item>
+    </style>
+</resources>

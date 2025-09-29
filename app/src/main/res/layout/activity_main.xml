@@ -7,13 +7,107 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/first_emoji_row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:style="@style/emoji_button_row"
+        app:layout_constraintBottom_toTopOf="@id/second_emoji_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/happy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="😀" />
+
+        <Button
+            android:id="@+id/sad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="🙁" />
+
+        <Button
+            android:id="@+id/angry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="😠" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second_emoji_row"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:style="@style/emoji_button_row"
+        app:layout_constraintTop_toBottomOf="@id/first_emoji_row"
+        app:layout_constraintBottom_toTopOf="@id/third_emoji_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <Button
+            android:id="@+id/grateful_button"
+            android:style="@style/emoji_button"
+            android:text="😇"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:id="@+id/love_button"
+            android:style="@style/emoji_button"
+            android:text="🥰"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:id="@+id/laughing_button"
+            android:style="@style/emoji_button"
+            android:text="😂"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_emoji_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:style="@style/emoji_button_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_emoji_row">
+
+        <Button
+            android:id="@+id/sleepy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="😴" />
+
+        <Button
+            android:id="@+id/embarrassed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="😳" />
+
+        <Button
+            android:id="@+id/mindblown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:style="@style/emoji_button"
+            android:text="🤯" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/daily_summary_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:style="@style/switch_page_button"
+        android:text="Daily Summary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/third_emoji_row" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
