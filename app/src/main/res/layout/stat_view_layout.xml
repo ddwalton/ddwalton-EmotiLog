@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stat_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@+id/action_button_layout"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/frequency_bar"
+        android:layout_width="40sp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/stat_display_number"
+        style="@style/stat_display_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/stat_display_emoji"
+        style="@style/stat_display_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/face_screaming_in_fear" />
+</LinearLayout>
